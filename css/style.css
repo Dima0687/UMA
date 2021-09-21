@@ -51,7 +51,7 @@ body {
 }
 
 .button {
-    display: inline;
+    display: inline-block;
     color: white;
     padding: 0.75rem 2rem;
     border-radius: 999999px;
@@ -71,7 +71,7 @@ body {
 }
 
 .button--transparent:hover {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.25)
 }
 
 .header {
