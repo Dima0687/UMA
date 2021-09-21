@@ -2,11 +2,135 @@
     box-sizing: border-box;
 }
 
+/** Breakpoint: 576px+ */
+@media (min-width: 36em) {
+
+}
+
+/** Breakpoint: 768px+ */
+@media (min-width: 48em) {
+    
+}
+
+/** Breakpoint: 992px+ */
+@media (min-width: 62em) {
+    
+}
+
+/** Breakpoint: 1200px+ */
+@media (min-width: 75em) {
+    
+}
+
+/** Breakpoint: 1400px+ */
+@media (min-width: 87.5em) {
+    
+}
+
 html {
     font-size: 1em;
 }
 
 body {
     font-family: "Montserrat", sans-serif;
+    margin: 0;
 }
 
+.container {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+@media (min-width: 62em) {
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.button {
+    display: inline;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 999999px;
+    background-color: #ED6A4E;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button:hover {
+    text-decoration: underline;
+    background-color: #c95f47;
+}
+
+.button--transparent {
+    background-color: transparent;
+    border: 0.125rem solid white;
+}
+
+.button--transparent:hover {
+    background-color: transparent;
+}
+
+.header {
+    background-image: url("../images/header/header-background-0.5x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+@media (min-width: 62em) {
+    .header {
+        background-image: url("../images/header/header-background.jpg");
+    }
+}
+
+.header__logo {
+    width: 100%;
+}
+
+.header__logo-link {
+    display: block;
+    width: 9rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 62em) {
+    .header__logo-link {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.header__nav-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav-li {
+    list-style-type: none;
+}
+
+.header__nav-link {
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 1rem;
+}
+
+.header__nav {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 62em) {
+    .header__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
