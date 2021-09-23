@@ -77,12 +77,27 @@ body {
 .header {
     background-image: url("../images/header/header-background-0.5x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 75%;
     background-size: cover;
+    padding-bottom: 2rem;
 }
 @media (min-width: 62em) {
     .header {
         background-image: url("../images/header/header-background.jpg");
+    }
+}
+
+.header::after {
+    content: "";
+    display: block;
+    width: 7.5rem;
+    height: 0.25rem;
+    background-color: #ED6A4E;
+    margin: 0 auto;
+}
+@media (min-width: 62em) {
+    .header::after {
+        width: 12.5rem;
     }
 }
 
@@ -134,7 +149,7 @@ body {
 
 .header__nav {
     padding-top: 2rem;
-    padding-bottom: .5rem;
+    padding-bottom: .5rem; 
 }
 
 @media (min-width: 62em) {
@@ -166,7 +181,7 @@ body {
     color: white;
     margin: 0;
     padding-top: .5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2rem; 
 }
 @media (min-width: 36em) {
     .header__sub-heading {
@@ -176,13 +191,14 @@ body {
 
 @media (min-width: 62em) {
     .header__sub-heading {
-        padding-bottom: 5rem;
+        padding-bottom: 7.5rem;
     }
 }
 
 .header__button-container{
     display: flex;
     justify-content: center;
+    padding-bottom: 1.5rem;
 }
 
 @media (min-width: 62em) {
