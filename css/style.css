@@ -30,6 +30,7 @@
 html {
     font-size: 1em;
 }
+/* header start */
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -214,4 +215,24 @@ body {
     .header__button-container {
         display: none;
     }
+}
+
+/* header end */
+
+/* main start */
+main h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.adventures {
+    display: flex;
+    margin: 0 auto;
+}
+figure {
+    display: inline-block;
+    max-width: 300px;
+    
+}
+figure img {
+    max-width: 100%;
 }
