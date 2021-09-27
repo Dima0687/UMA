@@ -1,68 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="description" content="Made within an HTML & CSS Course by Jannis Seemann">
-    <meta name="author" content="Dietmar Eisner">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./lib/fonts/montserrat/Montserrat.css">
-    <link rel="stylesheet" href="./css/style.css">
-    
+    <meta
+      name="description"
+      content="Made within an HTML & CSS Course by Jannis Seemann"
+    />
+    <meta name="author" content="Dietmar Eisner" />
+
+    <link rel="stylesheet" href="./lib/fonts/montserrat/Montserrat.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
     <title>UMA</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <nav class="header__nav">
-                <a href="#" class="header__logo-link">
-                    <img src="./images/logo-cropped.svg" alt="Logo of UMA" class="header__logo">
-                </a>
-                
-                <ul class="header__nav-ul">
-                    <li class="header__nav-li">
-                        <a href="#" class="header__nav-link">Testimonials</a>
-                    </li>
-                    <li class="header__nav-li">
-                        <a href="tel:+49123456789" class="header__nav-link">+49 1234 56789</a>
-                    </li>
-                    <li class="header__nav-li header__nav-li--desktop-only"> 
-                        <a href="#" class="button button--transparent">Book now</a>
-                    </li>
-                </ul>
-            </nav>
-            <h1 class="header__heading">Unforgettable<br> Memories<br> Await</h1>
-            <p class="header__sub-heading">Go places. Collect stories.</p>
-            
-            <div class="header__button-container">
-                <a href="#" class="button button--transparent">Book now</a>
-            </div>
+      <div class="container">
+        <nav class="header__nav">
+          <a href="#" class="header__logo-link">
+            <img
+              src="./images/logo-cropped.svg"
+              alt="Logo of UMA"
+              class="header__logo"
+            />
+          </a>
 
+          <ul class="header__nav-ul">
+            <li class="header__nav-li">
+              <a href="#" class="header__nav-link">Testimonials</a>
+            </li>
+            <li class="header__nav-li">
+              <a href="tel:+49123456789" class="header__nav-link"
+                >+49 1234 56789</a
+              >
+            </li>
+            <li class="header__nav-li header__nav-li--desktop-only">
+              <a href="#" class="button button--transparent">Book now</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__heading">
+          Unforgettable<br />
+          Memories<br />
+          Await
+        </h1>
+        <p class="header__sub-heading">Go places. Collect stories.</p>
+
+        <div class="header__button-container">
+          <a href="#" class="button button--transparent">Book now</a>
         </div>
+      </div>
     </header>
     <main>
 
-        <h2>Gear up for <br> <strong>your next Adventure</strong></h2>
-        <section class="adventures">
-            <figure>
-                <img src="./images/adventures/thailand.jpg" alt="An fishing boot with a beautiful sunset">
-                <figcaption>thailand feb 22 | 11 Nights</figcaption>
-            </figure>
-            <figure>
-                <img src="./images/adventures/mexico.jpg" alt="Women on a Swing">
-                <figcaption>mexico feb 22 | 11 Nights</figcaption>
-            </figure>
-            <figure>
-                <img src="./images/adventures/india.jpg" alt="India Bazaar">
-                <figcaption>india feb 22 | 11 Nights</figcaption>
-            </figure>
-        </section>
-        
-    </main>
-    <footer>
+      <section class="adventures">
+        <div class="container">
+          <h2 class="heading heading--centered">
+            <span class="heading__pre-text">Gear up for</span>
+            <strong>your next Adventure</strong>
+          </h2>
+          <div class="adventures__card-container">
+            <figure class="adventures__card"></figure>
+            <figure class="adventures__card"></figure>
+            <figure class="adventures__card"></figure>
+        </div>
+        </div>
+      </section>
 
-    </footer>
-</body>
+    </main>
+    <footer></footer>
+  </body>
 </html>

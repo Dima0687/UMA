@@ -220,19 +220,44 @@ body {
 /* header end */
 
 /* main start */
-main h2 {
-    text-align: center;
+.heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.5rem;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #014153;
+    padding: 2rem 0;
 }
+
+.heading__pre-text {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.heading--centered {
+    text-align: center;
+}
+
 .adventures {
+    background-color: rgb(225, 220, 206);
+    background-image: url(../images/adventures/background.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.adventures__card-container {
     display: flex;
-    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -1rem;
+    margin-right: -1rem;
 }
-figure {
-    display: inline-block;
-    max-width: 300px;
-    
-}
-figure img {
-    max-width: 100%;
+.adventures__card {
+    background-color: white;
+    flex: 0 0 22.3333rem;
+    height: 40rem;
+    margin: 1rem;
 }
