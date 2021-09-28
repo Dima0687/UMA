@@ -79,6 +79,10 @@ body {
     background-color: rgba(255, 255, 255, 0.25)
 }
 
+.text-primary {
+    color: #ED6A4E;
+}
+
 .header {
     background-image: url("../images/header/header-background-0.5x.jpg");
     background-repeat: no-repeat;
@@ -260,4 +264,21 @@ body {
     flex: 0 0 22.3333rem;
     height: 40rem;
     margin: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.adventures__card-img {
+    display: block;
+    width: 100%;
+}
+.adventures__card-heading {
+    margin: 0;
+    padding-top: 1.25rem;
+    font-size: 1.5rem;
+    color: #014153;
+    text-transform: uppercase;
+    text-align: center;
+}
+.adventures__card-date {
+    padding-top: 1.25rem;
 }
