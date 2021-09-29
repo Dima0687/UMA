@@ -263,29 +263,37 @@ body {
     background-color: rgb(255, 255, 255);
     flex: 0 0 22.3333rem;
     margin: 1rem;
-    height: max-content;
     border-radius: 2rem;
     overflow: hidden;
-    padding-bottom: 1.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .25);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
     transition: transform 0.25s ease-in-out;
+    position: relative;
 }
-
 .adventures__card:hover {
     transform: scale(1.05);
 }
-
 .adventures__card-img {
     display: block;
     width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    object-position: 50% top;
 }
 .adventures__card-heading {
     margin: 0;
     padding-top: 1.25rem;
+    padding-bottom: 1.5rem;
     font-size: 1.5rem;
-    color: #014153;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-align: center;
+
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(.5rem);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .adventures__card-date {
     padding-top: 1.25rem;
