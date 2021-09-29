@@ -264,7 +264,6 @@ body {
     flex: 0 0 22.3333rem;
     margin: 1rem;
     height: max-content;
-    margin: 1rem;
     border-radius: 2rem;
     overflow: hidden;
     padding-bottom: 1.5rem;
@@ -292,3 +291,4 @@ body {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
 }
+
