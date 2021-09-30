@@ -244,9 +244,22 @@ body {
     text-align: center;
 }
 
+.heading--white {
+    color: #fff;
+}
+
+.heading--top-box::before {
+    content: "";
+    display: block;
+    height: .125rem;
+    width: 7.5rem;
+    background-color: #ED6A4E;
+    margin-bottom: 2rem;
+}
+
 .adventures {
     background-color: rgb(225, 220, 206);
-    background-image: url(../images/adventures/background.jpg);
+    background-image: url("../images/adventures/background.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -301,3 +314,28 @@ body {
     padding-bottom: 1.25rem;
 }
 
+.story {
+    background-image: url("../images/story/background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+@media (min-width: 62em) {
+    .story {
+        background-image: url("../images/story/background-desktop.jpg");
+    }
+    .story__inner {
+        padding-left: calc(50% + 2rem);
+    }
+}
+
+.story__paragraph {
+    margin: 0;
+    font-size: 1.25rem;
+    color: white;
+    padding-bottom: 1rem;
+    line-height: 1.4em;
+}
