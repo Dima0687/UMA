@@ -338,11 +338,31 @@ body {
     }
 }
 
-.story__paragraph {
+.paragraph{
     margin: 0;
     font-size: 1rem;
-    color: white;
     padding-bottom: 1.5rem;
     line-height: 1.4em;
+}
+.paragraph--story {
+    color:white;
     text-shadow: 0 0 .5rem rgba(0, 0, 0, .5);
+}
+.paragraph--parts {
+    color: #014153;
+    max-width: 40rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.parts {
+    padding-bottom: 2rem;
+}
+.parts::after {
+    content: "";
+    display: block;
+    height: .25rem;
+    width: 7.5rem;
+    background-color: #ED6A4E;
+    margin: 0 auto;
 }
