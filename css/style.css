@@ -352,6 +352,7 @@ body {
     color: #014153;
     max-width: 40rem;
     text-align: center;
+    padding-top: 2.5rem;
     margin: 0 auto;
 }
 
@@ -366,17 +367,36 @@ body {
     background-color: #ED6A4E;
     margin: 0 auto;
 }
+
+.parts__items-outer {
+    overflow: hidden;
+}
+
+.parts__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -0.125rem;
+}
+   
 .parts__item {
-    width: 20rem;
+    flex: 1 0 20rem;
     border: 0.125rem solid #ED6A4E;
     padding: 1.5rem;
+    text-decoration: none;
 }
-.parts__item-icon {
-    width: 4rem;
-    height: 4rem;
+.parts__item:hover {
+    background-color: rgb(222, 222, 222);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.parts__item-icon-container {
+    width: 5rem;
+    height: 5rem;
     border-radius: 99999px;
     background-color: #ED6A4E;
     margin: 0 auto;
+    display: flex;
 }
 
 .parts__item-heading {
@@ -387,4 +407,24 @@ body {
     margin: 0;
     font-weight: bold;
     text-align: center;
+}
+
+
+/* SVG */
+
+.parts__item-icon {
+    color: white;
+    width: 3rem;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.compass,
+.map,
+.path,
+.mountains,
+.market {
+    fill: currentColor;
 }
