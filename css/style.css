@@ -366,3 +366,25 @@ body {
     background-color: #ED6A4E;
     margin: 0 auto;
 }
+.parts__item {
+    width: 20rem;
+    border: 0.125rem solid #ED6A4E;
+    padding: 1.5rem;
+}
+.parts__item-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 99999px;
+    background-color: #ED6A4E;
+    margin: 0 auto;
+}
+
+.parts__item-heading {
+    display: block;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    color: #014153;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
