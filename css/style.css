@@ -409,6 +409,35 @@ body {
     text-align: center;
 }
 
+.guide {
+    height: 20rem;
+
+    background-image:
+    linear-gradient(90deg, rgba(36, 161, 163, 0.25), rgba(36, 161, 163, 0.25)),
+    url("../images/guide/pexels-arnie-chou-927414.jpg"),
+    linear-gradient(90deg, #014153, #014153), 
+    url("../images/guide/pexels-minmin-kp-2554603.jpg");
+    background-size: 
+        60% 100%,
+        60% auto,
+        60% 100%,
+        40% auto;
+    background-repeat: 
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position:
+        100% 60%, 
+        100% 60%,
+        100% 60%,
+        0% 60%;
+    background-blend-mode: 
+        normal,
+        saturation,    
+        normal;
+}
+
 
 /* SVG */
 
