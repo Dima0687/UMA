@@ -423,32 +423,26 @@ body {
 /* guide starts */
 
 .guide {
-    height: 30rem;
     padding-top: 10rem;
-    padding-bottom: 24rem;
+    padding-bottom: 3rem;
     background-image:
-        linear-gradient(90deg, rgba(36, 161, 163, 0.25), rgba(36, 161, 163, 0.25)),
-        url("../images/guide/pexels-arnie-chou-927414.jpg"),
         linear-gradient(90deg, #014153, #014153), 
-        url("../images/guide/pexels-minmin-kp-2554603.jpg");
+        url("../images/guide/pexels-kevin-menajang-982673.jpg"),
+        url("../images/guide/pexels-aron-visuals-1694621.jpg");
     background-size:
-        100% calc(100% - 10rem),
         100% calc(100% - 10rem),
         100% calc(100% - 10rem), 
         100% auto;
     background-repeat: 
         no-repeat,
         no-repeat,
-        no-repeat,
         no-repeat;
     background-position:
         50% 100%,
         50% 100%,
-        50% 100%,
-        50% calc(5rem - 82vw);
+        50% calc(5rem - 60vw);
     background-blend-mode: 
-        normal,
-        saturation,    
+        multiply,    
         normal;
 }
 
@@ -459,26 +453,20 @@ body {
         background-size: 
             calc(50% + 10rem) 100%,
             calc(50% + 10rem) 100%,
-            calc(50% + 10rem) 100%,
             calc(50% - 10rem) auto;
         background-repeat: 
             no-repeat,
             no-repeat,
-            no-repeat,
             no-repeat;
         background-position:
-            100% 50%, 
             100% 50%,
             100% 50%,
-            0% 50%;
-        background-blend-mode: 
-            normal,
-            saturation,    
-            normal;
+            0% 20%;
     }
 
     .container__guide {
-        padding-left: calc(50% - 8rem);
+        padding-top: 1rem;
+        padding-left: calc(50% - 7rem);
     }
 }
 
