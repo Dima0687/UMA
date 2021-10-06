@@ -258,6 +258,9 @@ body {
     margin-bottom: 2rem;
 }
 
+/* main end */
+
+/* adventure start */
 .adventures {
     background-color: rgb(225, 220, 206);
     background-image: url("../images/adventures/background.jpg");
@@ -314,6 +317,9 @@ body {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
 }
+/* adventure end */
+
+/* story start */
 
 .story {
     background-image: url("../images/story/background-mobile.jpg");
@@ -348,6 +354,10 @@ body {
     color:white;
     text-shadow: 0 0 .5rem rgba(0, 0, 0, .5);
 }
+/* story end */
+
+/* parts start */
+
 .paragraph--parts {
     color: #014153;
     max-width: 40rem;
@@ -408,36 +418,85 @@ body {
     font-weight: bold;
     text-align: center;
 }
+/* parts end */
+
+/* guide starts */
 
 .guide {
-    height: 20rem;
-
+    height: 30rem;
+    padding-top: 10rem;
+    padding-bottom: 24rem;
     background-image:
-    linear-gradient(90deg, rgba(36, 161, 163, 0.25), rgba(36, 161, 163, 0.25)),
-    url("../images/guide/pexels-arnie-chou-927414.jpg"),
-    linear-gradient(90deg, #014153, #014153), 
-    url("../images/guide/pexels-minmin-kp-2554603.jpg");
-    background-size: 
-        60% 100%,
-        60% auto,
-        60% 100%,
-        40% auto;
+        linear-gradient(90deg, rgba(36, 161, 163, 0.25), rgba(36, 161, 163, 0.25)),
+        url("../images/guide/pexels-arnie-chou-927414.jpg"),
+        linear-gradient(90deg, #014153, #014153), 
+        url("../images/guide/pexels-minmin-kp-2554603.jpg");
+    background-size:
+        100% calc(100% - 10rem),
+        100% calc(100% - 10rem),
+        100% calc(100% - 10rem), 
+        100% auto;
     background-repeat: 
         no-repeat,
         no-repeat,
         no-repeat,
         no-repeat;
     background-position:
-        100% 60%, 
-        100% 60%,
-        100% 60%,
-        0% 60%;
+        50% 100%,
+        50% 100%,
+        50% 100%,
+        50% calc(5rem - 82vw);
     background-blend-mode: 
         normal,
         saturation,    
         normal;
 }
 
+@media (min-width: 62em) {
+    .guide {
+        padding-top: 0;
+
+        background-size: 
+            calc(50% + 10rem) 100%,
+            calc(50% + 10rem) 100%,
+            calc(50% + 10rem) 100%,
+            calc(50% - 10rem) auto;
+        background-repeat: 
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat;
+        background-position:
+            100% 50%, 
+            100% 50%,
+            100% 50%,
+            0% 50%;
+        background-blend-mode: 
+            normal,
+            saturation,    
+            normal;
+    }
+
+    .container__guide {
+        padding-left: calc(50% - 8rem);
+    }
+}
+
+.paragraph--guide {
+    color:white;
+    text-shadow: 0 0 .5rem rgba(0, 0, 0, .5);
+}
+
+.heading--bottom-box::after {
+    content: "";
+    display: block;
+    height: .25rem;
+    width: 7.5rem;
+    background-color: #ED6A4E;
+    margin-top: 2rem;
+}
+
+/* guide end */
 
 /* SVG */
 
