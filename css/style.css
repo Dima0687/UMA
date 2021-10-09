@@ -83,6 +83,16 @@ body {
     color: #ED6A4E;
 }
 
+.desktop-only {
+    display: none;
+}
+
+@media (min-width: 62em) {
+    .desktop-only {
+        display: initial;
+    }
+}
+
 .header {
     background-image: url("../images/header/header-background-0.5x.jpg");
     background-repeat: no-repeat;
@@ -268,7 +278,10 @@ body {
     background-position: 50% 50%;
     background-size: cover;
 }
-.adventures__card-container {
+
+/* for adventure and skills section */
+
+.card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -276,7 +289,8 @@ body {
     margin-left: -1rem;
     margin-right: -1rem;
 }
-.adventures__card {
+/* for adventure and skills section */
+.card {
     background-color: rgb(255, 255, 255);
     flex: 0 0 22.3333rem;
     margin: 1rem;
@@ -286,7 +300,8 @@ body {
     transition: transform 0.25s ease-in-out;
     position: relative;
 }
-.adventures__card:hover {
+/* for adventure and skills section */
+.card:hover {
     transform: scale(1.05);
 }
 .adventures__card-img {
@@ -494,34 +509,14 @@ body {
     background-size: cover;
     padding-bottom: 4rem;
 }
-.skills__card-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: -1rem;
-    margin-right: -1rem;
-}
-.skills__card {
-    background-color: rgb(255, 255, 255);
-    flex: 0 0 22.3333rem;
-    margin: 1rem;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
-    transition: transform 0.25s ease-in-out;
-    position: relative;
-}
-.skills__card:hover {
-    transform: scale(1.05);
-}
+
 .skills__item-icon-container {
-    width: 5rem;
-    height: 5rem;
+    display: inline-block;
     border-radius: 99999px;
     background-color: #ED6A4E;
-    margin: 2rem 2rem 0 2rem;
-    display: flex;
+    padding: 1rem; 
+    font-size: 4rem;
+    margin: 1rem;
 }
 .heading--skills {
     font-size: 1.5rem;
@@ -539,10 +534,45 @@ body {
 }
 /* skills end */
 
+/* quote start */
+.quote {
+    background-color: #014153;
+    color: #ED6A4E;
+    padding: 4rem 0;
+}
+.quote__figure {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .075em;
+}
+.quote__blockquote {
+    margin: 0;
+    padding-bottom: 1.5rem;
+}
+.quote__paragraph {
+    margin: 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.quote__paragraph::before {
+    content: "„";
+}
+.quote__paragraph::after {
+    content: "“";
+}
+.quote__author {
+    font-style: normal;
+}
+.quote__author::before {
+    content: "- ";
+
+}
+/* quote end */
+
 /* SVG */
 
-.parts__item-icon,
-.skills__item-icon {
+.parts__item-icon {
     color: white;
     width: 3rem;
     display: block;
@@ -550,6 +580,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.skills__item-icon {
+    display: block;
+    width: 1em;
+    height: 1em;
+} 
 
 .skills__item-icon {
     color: #014153;
