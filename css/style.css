@@ -36,7 +36,10 @@ body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
 }
-
+::selection {
+    color: #014153;
+    background: #ED6A4E;
+}
 .container {
     max-width: 75rem;
     margin-left: auto;
@@ -696,9 +699,20 @@ body {
     background-color: #104f61;
 }
 
+.contact ::selection {
+    color: #ED6A4E;
+    background-color: #014153;
+}
+
 /* contact end */
 
 /* footer start */
+
+.footer ::selection {
+    color: #ED6A4E;
+    background-color: #014153;
+}
+
 .footer {
     background-color: #ED6A4E;
 }
